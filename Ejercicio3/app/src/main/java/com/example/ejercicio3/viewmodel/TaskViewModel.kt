@@ -2,7 +2,7 @@ package com.example.ejercicio3.viewmodel
 
 import androidx.lifecycle.ViewModel
 import com.example.ejercicio3.model.Task
-import com.example.ejercicicio3.model.TaskState
+import com.example.ejercicio3.model.TaskState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
