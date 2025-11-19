@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "com.example.fibonacci"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.fibonacci"
         minSdk = 24
-        targetSdk = 35
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
@@ -40,6 +40,9 @@ android {
 }
 
 dependencies {
+    val lifecycle_version = "2.8.0" // O la versión que prefieras usar
+
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
