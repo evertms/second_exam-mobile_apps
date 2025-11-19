@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.ejercicio3"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.ejercicio3"
@@ -40,6 +40,9 @@ android {
 }
 
 dependencies {
+    val lifecycle_version = "2.8.0" // O la versión que prefieras usar
+
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
